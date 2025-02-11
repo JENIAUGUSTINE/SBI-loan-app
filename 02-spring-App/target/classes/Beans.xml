@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="payment" class="in.jeni.it.CreditCard"/>
+<bean id="payment1" class="in.jeni.it.DebitCard" primary="true"/>
+<bean id="PaymentProcess" class="in.jeni.it.PaymentService" autowire="byType">
+<!-- <constructor-arg name="payment" ref="Credit"/> -->
+<!-- <property name="payment" ref="Debit"></property> -->
+</bean>
+
+    <!-- bean definitions here -->
+
+</beans>

@@ -1,0 +1,10 @@
+
+public class PetrolEngine implements IEngine{
+
+	@Override
+	public int start() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
+
+}
